@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Paulo Ricardo - Desenvolvedor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Roboto:ital,wght@1,400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="imagens/logo-2.png" alt="Logotipo">
+      </div>  
+      <ul id="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre-mim">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção Início -->
+  <section id="inicio">
+    <div class="container">
+      <div class="imagem-circular">
+        <img src="imagens/imagem-pessoal.jpg" alt="Minha Foto">
+      </div>  
+      <div class="texto">
+        <h1>
+          <span class="bracket">&lt;</span>
+          Bem-Vindo ao meu Portfólio
+          <span class="slash">/</span>
+          <span class="bracket">&gt;</span>
+        </h1>
+        <p>Olá, meu nome é Paulo Ricardo. Sou um desenvolvedor apaixonado por tecnologia e inovação. Explore meus projetos e saiba mais sobre mim.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Sobre Mim -->
+  <section id="sobre-mim">
+    <h1>Sobre Mim</h1>
+    <div class="sobre-container">
+      <div class="sobre-texto">
+        <p>
+          <!-- Texto sobre mim -->
+          Olá! Meu nome é Paulo Ricardo, e estou no início da minha jornada como desenvolvedor. Por muitos anos, atuei em áreas diversas, como telecomunicações e vendas, o que me proporcionou habilidades valiosas, como comunicação, trabalho em equipe e resiliência.
+  
+          Sempre tive grande interesse pelo universo da tecnologia, mas a correria do dia a dia tornava difícil mergulhar nesse mundo. Até que um dia, decidi dar um passo importante e iniciei minha graduação em Análise e Desenvolvimento de Sistemas na Universidade Unicarioca. Desde então, tenho me dedicado intensamente a aprender e aprimorar minhas habilidades, ocupando meu tempo livre com estudos e projetos.
+  
+          Tenho um portfólio crescente de projetos que refletem meu aprendizado contínuo e minha vontade de superar desafios. Estou à procura de uma oportunidade de estágio para aplicar meus conhecimentos, ganhar experiência prática e contribuir com soluções criativas e eficazes para problemas reais.
+  
+          Além da paixão pela tecnologia, valorizo o aprendizado constante e acredito que a troca de experiências é fundamental para o crescimento pessoal e profissional. Estou animado para trilhar esse caminho e deixar minha marca.
+        </p>
+      </div>
+      <div class="sobre-imagem">
+        <img src="imagens/programador-1.png" alt="Imagem de Programador">
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Projetos -->
+<section id="projetos">
+  <h1>Projetos</h1>
+  <div class="projeto-container">
+    <div class="projeto-descricao">
+      <h2>Gerenciamento de Estoque em Python</h2>
+      <p>
+        Aplicação desenvolvida em Python usando Tkinter para a interface gráfica e SQLite para gerenciamento persistente dos dados. Permite cadastrar produtos, controlar estoque e visualizar atualizações em tempo real.
+      </p>
+    </div>
+    <div class="projeto-imagens">
+      <!-- Links que apontam para as divs (modais) -->
+      <a href="#img1">
+        <img src="imagens/projeto1.0.png" alt="Tela Inicial do Projeto">
+      </a>
+      <a href="#img2">
+        <img src="imagens/projeto1.1.png" alt="Atualizações de Estoque">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox (modais) -->
+<div id="img1" class="modal">
+  <!-- Botão de fechar -->
+  <a href="#" class="close">&times;</a>
+  <img src="imagens/projeto1.0.png" alt="Tela Inicial do Projeto">
+</div>
+
+<div id="img2" class="modal">
+  <!-- Botão de fechar -->
+  <a href="#" class="close">&times;</a>
+  <img src="imagens/projeto1.1.png" alt="Atualizações de Estoque">
+</div>
+
+  <!-- Seção Contato -->
+  <section id="contato">
+    <h1>Contato</h1>
+    <p>Entre em contato comigo através dos seguintes meios:</p>
+    <ul>
+      <li>E-mail: <a href="pr.pauloricardo@live.com">seuemail@example.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/pauloricardo89/" target="_blank" rel="noopener">Seu Perfil no LinkedIn</a></li>
+      <!-- Adicione outras formas de contato se desejar -->
+    </ul>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Paulo Ricardo</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
