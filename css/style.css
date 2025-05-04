@@ -561,8 +561,8 @@ footer .fa-heart {
 /* Para telas muito pequenas */
 @media (max-width: 480px) {
   #inicio .imagem-circular img {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
 
   #inicio h1 {
@@ -579,6 +579,9 @@ footer .fa-heart {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh; /* Ocupar toda a altura da tela */
+  position: relative;
+  box-sizing: border-box;
 }
 
 #inicio .container {
@@ -588,46 +591,38 @@ footer .fa-heart {
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
-  gap: 20px;
+  gap: 30px; /* Aumentando um pouco o espaço entre os elementos */
   padding: 0;
 }
 
 #inicio .imagem-circular {
-  flex: 1 1 200px;
+  flex: 1 1 250px; /* Aumentando a proporção */
   text-align: center;
 }
 
 #inicio .imagem-circular img {
-  width: 220px; /* Reduzindo o tamanho da imagem */
-  height: 220px;
+  width: 340px; /* Aumentando o tamanho da imagem */
+  height: 340px; /* Aumentando o tamanho da imagem */
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid var(--primary-color);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 6px solid var(--primary-color); /* Borda um pouco mais grossa */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
   transition: var(--transition);
 }
 
 #inicio .imagem-circular img:hover {
   transform: scale(1.05);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 #inicio .texto {
-  flex: 2 1 400px;
+  flex: 2 1 450px; /* Ajustando a proporção */
 }
 
 #inicio h1 {
-  font-size: 2rem; /* Redução do tamanho da fonte */
-  margin-bottom: 15px;
+  font-size: 2.2rem; /* Aumentando um pouco o tamanho da fonte */
+  margin-bottom: 20px;
   color: var(--text-color);
-}
-
-#inicio .bracket {
-  color: var(--primary-color);
-}
-
-#inicio .slash {
-  color: var(--accent-color);
 }
 
 /* Estilos para a seção Sobre Mim */
@@ -655,17 +650,18 @@ footer .fa-heart {
 }
 
 .sobre-imagem img {
-  max-width: 90%;
+  max-width: 110%;
   height: auto;
-  border-radius: var(--border-radius);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /*border-radius: var(--border-radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);*/
   transition: var(--transition);
 }
 
-.sobre-imagem img:hover {
+/* Removendo o efeito hover da imagem "Sobre Mim" */
+/* .sobre-imagem img:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
+} */
 
 /* Estilos para seção de projetos */
 .projeto-container {
