@@ -337,6 +337,58 @@ header {
   gap: 15px;
 }
 
+/* Timeline badges e links */
+.timeline-badges {
+  margin: 12px 0;
+}
+
+.timeline-content .projeto-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: var(--transition);
+}
+
+.timeline-content .projeto-link i {
+  margin-right: 6px;
+}
+
+.timeline-content .projeto-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.timeline-content h3 {
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+  font-weight: 500;
+  color: var(--dark-gray);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.timeline-content p {
+  margin-bottom: 10px;
+}
+
+.timeline-content small {
+  color: var(--dark-gray);
+  font-style: italic;
+}
+
+/* Ajustes na seção de timeline */
+.timeline-container {
+  max-width: 900px;
+  margin: 40px auto;
+  position: relative;
+}
+
 /* Formulário de Contato */
 .contato-container {
   display: flex;
