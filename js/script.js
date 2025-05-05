@@ -78,16 +78,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Formulário de contato
+  // Removendo o preventDefault para permitir que o Formspree processe o formulário
   const formContato = document.querySelector("#formContato");
 
   if (formContato) {
-    formContato.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      // Aqui você pode adicionar uma funcionalidade real de envio de email
-      // usando um serviço como EmailJS, Formspree, etc.
-      alert("Obrigado pelo contato! Em breve retornarei sua mensagem.");
-      formContato.reset();
+    formContato.addEventListener("submit", function () {
+      // O Formspree lidará com o envio do formulário
+      // Não precisa de e.preventDefault() para que o formulário seja enviado normalmente
+      console.log("Formulário enviado para o Formspree");
+      // O redirecionamento após o envio será gerenciado pelo Formspree
     });
   }
 
