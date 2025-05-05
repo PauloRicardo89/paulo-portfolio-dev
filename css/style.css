@@ -74,16 +74,46 @@ header {
   height: var(--header-height);
 }
 
-/* Logo */
+/* Estilos para a logo com caixa escura no tema claro */
 .logo {
-  height: 50px;
+  height: 45px; /* Diminuindo a altura da caixa */
   display: flex;
   align-items: center;
+  position: relative;
+  background-color: transparent;
+  transition: var(--transition);
+  padding: 2px; /* Reduzindo o padding de 5px para 2px */
+  border-radius: 4px; /* Diminuindo o arredondamento da borda */
+}
+
+/* No tema claro, aplicar fundo escuro para a logo branca ser visível */
+body:not(.dark-theme) .logo {
+  background-color: #2c3e50; /* Cor escura para contrastar com a logo branca */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Sombra mais sutil */
 }
 
 .logo img {
   height: 100%;
   width: auto;
+  transition: var(--transition);
+}
+
+/* No modo claro (padrão), mostrar apenas logo-dark */
+.logo-light {
+  display: none;
+}
+
+.logo-dark {
+  display: block;
+}
+
+/* No modo escuro, mostrar apenas logo-light */
+.dark-theme .logo-light {
+  display: block;
+}
+
+.dark-theme .logo-dark {
+  display: none;
 }
 
 /* Menu principal */
@@ -400,10 +430,12 @@ header {
   gap: 30px;
   max-width: 1000px;
   margin: 30px auto;
+  justify-content: center; /* Centralizando os elementos */
 }
 
 .contato-info {
   flex: 1 1 300px;
+  max-width: 400px; /* Limitando a largura máxima */
 }
 
 .contato-info ul {
@@ -431,10 +463,13 @@ header {
   padding: 25px;
   border-radius: var(--border-radius);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Limitando a largura máxima */
+  margin: 0 auto; /* Centralização horizontal */
 }
 
 .form-group {
   margin-bottom: 20px;
+  text-align: left; /* Alinhamento dos textos à esquerda */
 }
 
 .form-group label {
@@ -446,7 +481,7 @@ header {
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: 97%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: var(--border-radius);
