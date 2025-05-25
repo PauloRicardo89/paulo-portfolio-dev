@@ -48,7 +48,7 @@ section {
 /* A primeira seção precisa de padding menor no topo */
 section#inicio {
   padding-top: calc(var(--header-height) + 40px);
-  min-height: auto; /* Removendo altura mínima para evitar espaço em branco */
+  min-height: 0; /* Removendo altura mínima para evitar espaço em branco */
   height: auto;
 }
 
