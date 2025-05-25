@@ -551,26 +551,48 @@ body:not(.dark-theme) .logo {
 /* Rodapé */
 footer {
   text-align: center;
-  padding: 30px 20px;
-  margin-top: 60px;
+  padding: 15px 20px;
+  margin-top: 30px;
   background-color: var(--secondary-color);
   color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.85em;
+  line-height: 1.4;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .social-icons {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
 .social-icons a {
   color: white;
-  margin: 0 10px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   transition: var(--transition);
+  padding: 6px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
 }
 
 .social-icons a:hover {
   color: var(--primary-color);
-  transform: translateY(-3px);
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 footer .fa-heart {
@@ -643,9 +665,26 @@ footer .fa-heart {
     order: 1;
     margin-bottom: 20px;
   }
-
   .cta-buttons {
     justify-content: center;
+  } /* Footer responsivo */
+  footer {
+    padding: 12px 15px;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-icons a {
+    width: 28px;
+    height: 28px;
+    font-size: 1em;
+  }
+
+  footer p {
+    font-size: 0.8em;
+    padding: 0 10px;
   }
 }
 
